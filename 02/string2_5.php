@@ -1,7 +1,7 @@
 <?php
 
-$num = 7;
+$num = 4;
 
-$result = 24 % $num;
+$result = 7 % $num;
 
 echo $result;
