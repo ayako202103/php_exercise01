@@ -2,14 +2,22 @@
 
 $subjects = ['数学', '英語', '理科', '社会', '国語'];
 
-$subjects = [
-    '数学' => '明日',
-    '英語' => '明後日',
-    '理科' => '明々後日',
-    '社会' => '昨日',
-    '国語' => '中止',
-];
-
-foreach ($subjects as $subject => $date) {
-    echo $subject . 'の試験は'. $date .'です。' . '<br>';
+foreach ($subjects as $subject){
+    switch ($subject) {
+        case  '数学';
+        echo $subject . 'の試験は明日です。' . '<br>';
+        break;
+        case  '英語';
+        echo $subject . 'の試験は明後日です。' . '<br>';
+        break;
+        case  '理科';
+        echo $subject . 'の試験は明々後日です。' . '<br>';
+        break;
+        case  '社会';
+        echo $subject . 'の試験は昨日です。' . '<br>';
+        break;
+        case  '国語';
+        echo $subject . 'の試験は中止です。' . '<br>';
+        break;
+    }
 }

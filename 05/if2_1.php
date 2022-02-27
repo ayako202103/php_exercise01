@@ -10,9 +10,7 @@ while ($poket_money > $fund_raising) {
     echo '残りは'. $poket_money .'です。'. '<br>';
 }
 
-if ($poket_money < $fund_raising) {
 echo 'あなたはこれ以上募金できません。'. '<br>';
-}
 
 
 

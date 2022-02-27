@@ -1,23 +1,21 @@
 <?php
 
-$score = 59;
+$blood_type = 'AB' ;
 
-echo 'あなたのテストの点数は'. $score.'点で、';
-
-switch ($score) {
-    case $score >= 90 ;
-        echo '判定結果はAです。';
+switch ($blood_type) {
+    case 'A' ;
+        echo 'A型の方は几帳面だけど優しいらしいです！';
         break;
-    case $score >= 80 && $score < 90 ;
-        echo '判定結果はBです。';
+    case 'B' ;
+        echo 'B型の方は好奇心旺盛らしいです！';
         break;
-    case $score >= 70 && $score < 80 ;
-        echo '判定結果はCです。';
+    case 'AB' ;
+        echo 'AB型の方は先読み思考に優れた天才らしいです！';
         break;
-    case $score >= 60 && $score < 70 ;
-        echo '判定結果はDです。';
+    case 'O' ;
+        echo 'O型の方はおおらからしいです！';
         break;
     default:
-        echo '判定結果はFです。';
+        echo '判定不能です！';
         break;
 }
